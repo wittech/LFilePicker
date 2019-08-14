@@ -2,10 +2,26 @@
 
 buildscript {
     repositories {
-        jcenter()
+        mavenLocal()
+        maven{ url 'http://maven.aliyun.com/nexus/content/groups/public/'}
+        maven {url 'http://maven.aliyun.com/nexus/content/repositories/google'}
+        maven {
+            credentials {
+                username "mvn_read_ws"
+                password "mrk8929"
+            }
+            url "http://mvn.cloud.alipay.com/nexus/content/repositories/releases/"
+        }
+        maven {
+            url "http://developer.huawei.com/repo/"
+        }
+        maven {
+            url "http://qt.qunar.com/package/mvn/repository/maven-qim/"
+        }
+        google()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.3.2'
+        classpath 'com.android.tools.build:gradle:3.0.1'
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
@@ -14,7 +30,23 @@ buildscript {
 
 allprojects {
     repositories {
-        jcenter()
+        mavenLocal()
+        maven{ url 'http://maven.aliyun.com/nexus/content/groups/public/'}
+        maven {url 'http://maven.aliyun.com/nexus/content/repositories/google'}
+        maven {
+            credentials {
+                username "mvn_read_ws"
+                password "mrk8929"
+            }
+            url "http://mvn.cloud.alipay.com/nexus/content/repositories/releases/"
+        }
+        maven {
+            url "http://developer.huawei.com/repo/"
+        }
+        maven {
+            url "http://qt.qunar.com/package/mvn/repository/maven-qim/"
+        }
+        google()
     }
 }
 

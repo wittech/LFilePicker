@@ -134,7 +134,7 @@ public class LFilePickerActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String tempPath = new File(mPath).getParent();
-                if (tempPath == null) {
+                if (tempPath == null || tempPath.equals("/")) {
                     return;
                 }
                 mPath = tempPath;
