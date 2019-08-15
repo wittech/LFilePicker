@@ -29,6 +29,6 @@ dependencies {
 //    provided 'com.mpaas.mpaasadapter:mpaasadapter-build:1.0.0.190730171429:api@jar'
 
     //24.1.1之后的v4支持库会分成多个文件，会导致找不到文件 https://www.jianshu.com/p/d36a1e5bf246
-    compile 'com.android.support:appcompat-v7:24.1.1'
-    compile 'com.android.support:recyclerview-v7:24.1.1'
+    compile 'com.android.support:appcompat-v7:26.1.0'
+    compile 'com.android.support:recyclerview-v7:26.1.0'
 }

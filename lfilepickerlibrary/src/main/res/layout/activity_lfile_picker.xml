@@ -10,10 +10,10 @@
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="?android:attr/actionBarSize"
-        android:background="?attr/colorPrimary"
-        android:minHeight="?android:attr/actionBarSize"
-        app:navigationIcon="?attr/navigationIcon" />
+        android:layout_height="?android:actionBarSize"
+        android:background="#92B4F4"
+        android:minHeight="?android:actionBarSize"
+        app:navigationIcon="@mipmap/lfile_back1" />
     <LinearLayout
         android:id="@+id/layout_path"
         android:layout_width="match_parent"

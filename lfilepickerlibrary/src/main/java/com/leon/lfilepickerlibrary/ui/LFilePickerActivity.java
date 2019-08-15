@@ -49,7 +49,6 @@ public class LFilePickerActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         mParamEntity = (ParamEntity) getIntent().getExtras().getSerializable("param");
-        setTheme(mParamEntity.getTheme());
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lfile_picker);
         initView();
@@ -88,12 +87,10 @@ public class LFilePickerActivity extends AppCompatActivity {
         if (mParamEntity.getTitleStyle() != 0) {
             mToolbar.setTitleTextAppearance(this, mParamEntity.getTitleStyle());
         }
-        if (mParamEntity.getTitleColor() != null) {
-            mToolbar.setTitleTextColor(Color.parseColor(mParamEntity.getTitleColor())); //设置标题颜色
-        }
         if (mParamEntity.getBackgroundColor() != null) {
             mToolbar.setBackgroundColor(Color.parseColor(mParamEntity.getBackgroundColor()));
         }
+
 //        switch (mParamEntity.getBackIcon()) {
 //            case Constant.BACKICON_STYLEONE:
 //                mToolbar.setNavigationIcon(R.mipmap.lfile_back1);

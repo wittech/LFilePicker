@@ -37,7 +37,7 @@
         <TextView
             android:id="@+id/tv_name"
             style="@style/LFile_item_text_name"
-            android:text="鬼吹灯"/>
+            android:text="文本内容"/>
 
         <TextView
             android:id="@+id/tv_detail"
