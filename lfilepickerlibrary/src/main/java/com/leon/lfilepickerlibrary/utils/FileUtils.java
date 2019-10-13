@@ -24,7 +24,9 @@ public class FileUtils {
         }
 
         for (int i = 0; i < files.length; i++) {
-            result.add(files[i]);
+            if(!files[i].getName().startsWith(".")) {
+                result.add(files[i]);
+            }
         }
         Collections.sort(result, new FileComparator());
         return result;
